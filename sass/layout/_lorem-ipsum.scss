@@ -1,0 +1,82 @@
+/*lorem ipsum*/
+.section-lorem-ipsum{
+    padding-top: 60px;
+    padding-bottom: 60px;
+  
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+  }
+
+.section-lorem-ipsum__list{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center;
+    padding-left: 0px;
+    grid-gap: 30px;
+
+    @media screen and (min-width: 768px){
+        justify-content: space-between;
+    }
+    
+    @media screen and (min-width: 1200px) {
+        flex-wrap: nowrap;
+    }
+}
+
+.section-lorem-ipsum__icon{
+    background-color: $first-decor-color;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+
+    @media screen and (min-width: 480px) {
+        width: 450px;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 354px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 270px;
+    }
+
+}
+.section-lorem-ipsum__title{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+
+    @media screen and (min-width: 480px) {
+        text-align: center;
+    }
+        
+    @media screen and (min-width: 768px) {
+        text-align: left;
+    }
+}
+
+.section-lorem-ipsum__text{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $third-text-color; 
+
+    @media screen and (min-width: 480px) {
+        width: 450px;
+    }
+    
+    @media screen and (min-width: 768px) {
+        width: 354px;
+    }
+    
+    @media screen and (min-width: 1200px) {
+        width: 270px;
+    }
+}

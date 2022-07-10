@@ -1,0 +1,30 @@
+/*what we do*/
+.section-what-we-do{
+    padding-bottom: 94px;
+
+    @media screen and (max-width: 1199px) {
+        display: none;
+    }
+}
+.section-what-we-do__list{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    padding-left: 0px;
+    margin-bottom: 0px;
+}
+.section-what-we-do__figcaption{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.17;
+    letter-spacing: 00.03em;
+    color: $second-text-color;
+    text-align: center;
+    width: 370px;
+    height: 70px;
+    background-color: rgba(47, 48, 58, 0.8);
+    padding-top: 27px;
+    margin: 0px;
+    position: relative;
+    bottom: 74px;
+}

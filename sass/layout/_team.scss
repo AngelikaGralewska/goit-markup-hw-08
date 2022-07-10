@@ -1,0 +1,94 @@
+/*team*/
+.section-our-team{
+    background-color:$second-background-color;
+    padding-bottom: 60px;
+    padding-top: 60px;
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+        min-height: 648px;
+    }
+}
+
+.section-our-team__list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    padding-left: 0px;
+    grid-gap: 30px;
+
+    @media screen and (min-width: 1200px) {
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+}
+
+/*co-worker card*/
+.co-worker-card{
+    background-color: $third-decor-color;
+    padding-bottom: 24px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    margin: 0px;
+}
+
+.co-worker-card__image{
+    @media screen and (min-width: 480px) {
+        width: 450px;
+        height: 460px;
+    }
+    
+    @media screen and (min-width: 768px) {
+        width: 354px;
+        height: 374px;
+    }
+    
+    @media screen and (min-width: 1200px) {
+        width: 270px;
+        height: 260px;
+    }
+}
+
+.co-worker-card__name{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    text-align: center;
+    margin-top: 30px;
+}
+.co-worker-card__profession{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $third-text-color;
+}
+.co-worker-card__list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    padding-left: 0px;
+    grid-gap:10px;
+}
+.co-worker-card__icon{
+    background-color: $third-background-color;
+    border-radius: 50px;
+    fill:$first-icon-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover{
+    background-color: $accent-color;
+    fill: $second-icon-color;
+    }
+}
