@@ -1,0 +1,124 @@
+
+
+.mobile-navigation{
+    width: 480px;
+    height: 796px;
+    position: absolute;
+    background-color: #fff;
+    top: 0;
+    right: 0;
+    padding: 48px 40px;
+  }
+
+  .mobile-navigation__button--open {
+    display:inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: $third-background-color;
+    border: none;
+    cursor: pointer;
+    margin-left: 250px;
+  
+    &:hover,
+    &:focus {
+      fill:$accent-color;
+    }
+  
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+  }
+  
+  .mobile-navigation__button--close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background-color: $third-background-color;
+    margin-left: auto;
+    cursor: pointer;
+  
+    &:hover,
+    &:focus {
+        fill:$accent-color;
+    }
+  }
+    .mobile-navigation__list{
+        padding-left: 0px; 
+        margin: 0px;
+    }
+
+  .mobile-navigation__item,
+  .mobile-navigation__link {
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+    margin-bottom: 36px;
+    
+    color: $first-text-color;
+    list-style: none;
+    text-decoration: none;
+  
+    &:focus,
+    &:hover {
+      color: $accent-color;
+    }
+  }
+  
+  .mobile-navigation__tell{
+    display: block;
+    margin-bottom: 32px;
+    padding-top: 200px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+    color: $accent-color;
+    text-decoration: none;
+  }
+  
+  .mobile-navigation__mail {
+    display: block;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: #757575;
+    margin-bottom: 64px;
+    text-decoration: none;
+  }
+  
+  .mobile-navigation__social-media-list {
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    padding-left: 0px;
+  }
+  
+  .mobile-navigation__social-media-item {
+    position: relative;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    list-style: none;
+    color: $accent-color;
+  
+    &:not(:first-child)::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: -10px;
+      width: 1px;
+      height: 22px;
+      background-color:rgba(33, 33, 33, 0.2);
+    }
+  }
