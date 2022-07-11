@@ -291,10 +291,12 @@ body {
   justify-content: center;
   width: 40px;
   height: 40px;
+  fill: #212121;
   background-color: #ffffff;
   border: none;
   cursor: pointer;
   margin-left: 250px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mobile-navigation__button--open:hover, .mobile-navigation__button--open:focus {
   fill: #2196F3;
@@ -309,9 +311,12 @@ body {
   position: absolute;
   top: 8px;
   right: 8px;
+  fill: #212121;
   background-color: #ffffff;
   margin-left: auto;
   cursor: pointer;
+  border: none;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mobile-navigation__button--close:hover, .mobile-navigation__button--close:focus {
   fill: #2196F3;
@@ -333,6 +338,7 @@ body {
   color: #212121;
   list-style: none;
   text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mobile-navigation__item:focus, .mobile-navigation__item:hover,
 .mobile-navigation__link:focus,
@@ -423,14 +429,13 @@ body {
 }
 @media screen and (min-width: 768px) {
   .navigation {
-    margin-right: 91px;
-    margin-left: 43px;
+    margin-right: 90px;
+    margin-left: 50px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .navigation {
     margin-right: 345px;
-    margin-left: 50px;
   }
 }
 
@@ -501,6 +506,8 @@ body {
   .contact-header {
     flex-direction: column;
     align-content: center;
+    margin-bottom: 0px;
+    margin-top: 0px;
   }
 }
 
