@@ -279,7 +279,7 @@ body {
   width: 480px;
   height: 796px;
   position: absolute;
-  background-color: #fff;
+  background-color: #ffffff;
   top: 0;
   right: 0;
   padding: 48px 40px;
@@ -1090,6 +1090,16 @@ body {
   border-radius: 4px;
   background-color: #2F303A;
   padding-left: 16px;
+}
+@media screen and (max-width: 479px) {
+  .newsletter__input {
+    width: 300px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .newsletter__input {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .newsletter__input {
