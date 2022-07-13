@@ -276,13 +276,18 @@ body {
 }
 
 .mobile-navigation {
-  width: 480px;
+  width: 320px;
   height: 796px;
   position: absolute;
   background-color: #ffffff;
   top: 0;
   right: 0;
   padding: 48px 40px;
+}
+@media screen and (min-width: 480px) {
+  .mobile-navigation {
+    width: 480px;
+  }
 }
 
 .mobile-navigation__button--open {
@@ -295,11 +300,16 @@ body {
   background-color: #ffffff;
   border: none;
   cursor: pointer;
-  margin-left: 250px;
+  margin-left: 90px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mobile-navigation__button--open:hover, .mobile-navigation__button--open:focus {
   fill: #2196F3;
+}
+@media screen and (min-width: 480px) {
+  .mobile-navigation__button--open {
+    margin-left: 250px;
+  }
 }
 @media screen and (min-width: 768px) {
   .mobile-navigation__button--open {
@@ -383,7 +393,7 @@ body {
 .mobile-navigation__social-media-item {
   position: relative;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 10px;
   line-height: 1.22;
   letter-spacing: 0.02em;
   list-style: none;
@@ -398,6 +408,11 @@ body {
   width: 1px;
   height: 22px;
   background-color: rgba(33, 33, 33, 0.2);
+}
+@media screen and (min-width: 480px) {
+  .mobile-navigation__social-media-item {
+    font-size: 18px;
+  }
 }
 
 .header {
@@ -618,6 +633,7 @@ body {
   border-radius: 4px;
   border: none;
   cursor: pointer;
+  margin: 0 60px;
 }
 @media screen and (min-width: 480px) {
   .section-hero__button {
