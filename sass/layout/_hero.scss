@@ -3,7 +3,6 @@
     display:flex;
     justify-content: center;
     align-items:center;
-    background-color: $first-background-color;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -36,16 +35,16 @@
         rgba(47, 48, 58, 0.4)),
       url(../images/tabletbackground2x.jpg);
     
-    }
-    }
+    }}
 
     @media screen and (min-width: 1200px) {
+    background-size:cover;
     min-height: 600px;
-    background-size:contain;
-    background-image: linear-gradient(
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)),
+    background-image:linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)),
     url("../images/descopbackground.jpg");
+
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
