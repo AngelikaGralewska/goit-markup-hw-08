@@ -12,6 +12,7 @@ body {
 
 .container {
   width: 100%;
+  max-width: 1200px;
   margin: 0 auto;
 }
 @media screen and (min-width: 480px) {
@@ -54,9 +55,15 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 450px;
-  height: 609px;
+  width: 290px;
+  height: 630px;
   background-color: #ffffff;
+}
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .modal {
@@ -206,7 +213,7 @@ body {
 .modal__text {
   font-family: "Roboto";
   font-weight: 400;
-  font-size: 12px;
+  font-size: 6px;
   line-height: 1.16;
   letter-spacing: 0.01em;
   color: #757575;
@@ -216,6 +223,12 @@ body {
 }
 .modal__text--link {
   color: #2196F3;
+}
+@media screen and (min-width: 480px) {
+  .modal__text {
+    font-size: 12px;
+    line-height: 1.16;
+  }
 }
 @media screen and (min-width: 1200px) {
   .modal__text {
@@ -239,8 +252,20 @@ body {
   width: 200px;
   height: 50px;
   margin-top: 30px;
-  margin-left: 124px;
-  margin-right: 124px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+@media screen and (min-width: 480px) {
+  .modal__button {
+    margin-left: 85px;
+    margin-right: 85px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal__button {
+    margin-left: 124px;
+    margin-right: 124px;
+  }
 }
 
 .logo {
@@ -276,7 +301,7 @@ body {
 }
 
 .mobile-navigation {
-  width: 320px;
+  width: 100%;
   height: 796px;
   position: absolute;
   background-color: #ffffff;
@@ -564,10 +589,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #2F303A;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: center center;
   min-height: 400px;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobilebackground.jpg);
 }
@@ -588,8 +612,11 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .section-hero {
-    max-width: 1600px;
+    background-size: cover;
     min-height: 600px;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/descopbackground.jpg");
   }
 }
@@ -633,22 +660,9 @@ body {
   border-radius: 4px;
   border: none;
   cursor: pointer;
-  margin: 0 60px;
-}
-@media screen and (min-width: 480px) {
-  .section-hero__button {
-    margin: 0 140px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .section-hero__button {
-    margin: 0 284px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .section-hero__button {
-    margin: 0 500px;
-  }
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*lorem ipsum*/
@@ -688,10 +702,13 @@ body {
   align-items: center;
   justify-content: center;
   padding: 25px;
+  width: 290px;
+  margin-left: 15px;
 }
 @media screen and (min-width: 480px) {
   .section-lorem-ipsum__icon {
     width: 450px;
+    margin-left: 0px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -710,11 +727,7 @@ body {
   font-size: 14px;
   line-height: 1.17;
   letter-spacing: 0.03em;
-}
-@media screen and (min-width: 480px) {
-  .section-lorem-ipsum__title {
-    text-align: center;
-  }
+  text-align: center;
 }
 @media screen and (min-width: 768px) {
   .section-lorem-ipsum__title {
@@ -728,10 +741,12 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
+  margin-left: 15px;
 }
 @media screen and (min-width: 480px) {
   .section-lorem-ipsum__text {
     width: 450px;
+    margin-left: 0px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1232,6 +1247,8 @@ body {
 .project-card {
   border: 1px solid #ECECEC;
   cursor: pointer;
+  width: 290px;
+  height: 440px;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .project-card:hover {
@@ -1267,6 +1284,11 @@ body {
 .project-card__image--size {
   object-fit: cover;
 }
+@media screen and (max-width: 479px) {
+  .project-card__image--size {
+    width: 290px;
+  }
+}
 @media screen and (min-width: 480px) {
   .project-card__image--size {
     width: 450px;
@@ -1296,7 +1318,7 @@ body {
 
 .project-card__description {
   font-weight: 400;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 1.56;
   letter-spacing: 0.03em;
   color: #ffffff;
@@ -1305,6 +1327,11 @@ body {
   padding-top: 49px;
   padding-bottom: 49px;
   margin: 0;
+}
+@media screen and (min-width: 480px) {
+  .project-card__description {
+    font-size: 18px;
+  }
 }
 
 .project-card__text-area {
