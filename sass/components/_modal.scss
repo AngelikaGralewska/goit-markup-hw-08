@@ -20,9 +20,14 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    width: 450px;
-    height: 609px;
+    width: 290px;
+    height: 630px;
     background-color: $third-background-color;
+
+    @media screen and (min-width: 480px) {
+        width: 450px;
+        height: 609px;
+    }
 
     @media screen and (min-width: 1200px) {
         width: 528px;
@@ -43,6 +48,9 @@
 }
 .modal__content{
     padding: 40px;
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
 }
 .modal__title{
     font-family: $mainFont;
@@ -164,7 +172,7 @@
 .modal__text{
     font-family:$mainFont;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 6px;
     line-height: 1.16;
     letter-spacing: 0.01em;
     color:$third-text-color;
@@ -174,6 +182,11 @@
 
     &--link{
     color: $accent-color;
+    }
+
+    @media screen and (min-width: 480px) {
+        font-size: 12px;
+        line-height: 1.16;
     }
 
     @media screen and (min-width: 1200px) {
@@ -197,6 +210,16 @@
     width: 200px;
     height: 50px;
     margin-top:30px;
-    margin-left: 124px;
-    margin-right: 124px;
+    margin-left: 5px;
+    margin-right: 5px;
+
+    @media screen and (min-width: 480px) {
+        margin-left: 85px;
+        margin-right: 85px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-left: 124px;
+        margin-right: 124px;
+    }
 }

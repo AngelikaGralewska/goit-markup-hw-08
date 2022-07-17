@@ -7,11 +7,17 @@
     background-color:$third-background-color ;
     top: 0;
     right: 0;
-    padding: 48px 40px;
 
     @media screen and (min-width: 480px) {
         width: 480px;
       }
+  }
+  
+  .mobile-navigation__content{
+    padding: 48px 40px;
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
   }
 
   .mobile-navigation__button--open {
