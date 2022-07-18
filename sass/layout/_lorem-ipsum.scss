@@ -18,10 +18,12 @@
     grid-gap: 30px;
 
     @media screen and (min-width: 768px){
-        justify-content: space-between;
+        justify-content: space-around;
+    
     }
     
     @media screen and (min-width: 1200px) {
+        justify-content: space-between;
         flex-wrap: nowrap;
     }
 }
@@ -42,6 +44,7 @@
 
     @media screen and (min-width: 768px) {
         width: 354px;
+        margin-left: 0px;
     }
 
     @media screen and (min-width: 1200px) {
